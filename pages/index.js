@@ -6,8 +6,7 @@ import Toggler from '../components/ThemeToggler'
 import { ThemeProvider } from '../contexts/themeContext'
 
 // Search Function Components
-// import { Search } from '../components/Search';
-import Search from '../components/test'
+import Search from '../components/Search'
 import '../styles/Home.module.css'
 
 export default function Home() {
