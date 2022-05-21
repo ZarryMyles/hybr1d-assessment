@@ -1,13 +1,14 @@
-import React from 'react';
-import Head from 'next/head';
+import React from 'react'
+import Head from 'next/head'
 
 // Theme Switcher Components
-import Toggle from '../components/ThemeToggler';
-import { ThemeProvider } from '../contexts/themeContext';
+import Toggler from '../components/ThemeToggler'
+import { ThemeProvider } from '../contexts/themeContext'
 
 // Search Function Components
-import { SearchBar } from '../components/SearchBar';
-import '../styles/Home.module.css';
+// import { Search } from '../components/Search';
+import Search from '../components/test'
+import '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -15,19 +16,21 @@ export default function Home() {
       {/* Metadata and Page Info */}
       <Head>
         <title>Hybr1d Assessment</title>
-        <meta name="description" content="Created as part of the Hybr1d recruitment assessment" />
+        <meta
+          name="description"
+          content="Created as part of the Hybr1d recruitment assessment"
+        />
       </Head>
 
       {/* Theme Switcher Button */}
       <ThemeProvider>
-            <Toggle />
+        <Toggler />
       </ThemeProvider>
 
-
-      <h1 className='text-gray-800 font-quicksand dark:text-gray-200 transition duration-500 font-quicksand font-semibold text-3xl'>
+      <h1 className="text-gray-800 font-quicksand dark:text-gray-200 transition duration-500 font-quicksand font-semibold text-3xl">
         HN Search Application
       </h1>
-      <SearchBar />
+      <Search />
     </div>
   )
 }
